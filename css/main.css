@@ -1,5 +1,6 @@
 :root {
   --transition: all 0.2s ease;
+  --section-margin: 75px 0;
 
   /* Colors */
   --dark-blue-color: #0e1133;
@@ -179,9 +180,6 @@ nav .container {
   font-weight: normal;
   font-size: 10px;
 }
-/* .hero-section-img {
-  position: relative;
-} */
 .hero-section .hero-section-img {
   width: 60%;
   height: auto;
@@ -193,7 +191,7 @@ nav .container {
 /* End Hero Section */
 /* Features Section */
 .features-section {
-  margin: 75px 0;
+  margin: var(--section-margin);
 }
 .features-section .head-sec {
   display: flex;
@@ -356,18 +354,22 @@ nav .container {
 .about-section .about-sec-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+
   padding: 50px 0;
 }
 .about-section .about-sec-content .content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
+  align-items: center;
 }
 .about-section .about-sec-content .content article {
   text-align: left;
   border: 1px solid rgba(43, 43, 43, 0.301);
   border-radius: 5px;
   padding: 20px;
+  width: fit-content;
 
   display: flex;
   gap: 15px;
@@ -404,3 +406,174 @@ nav .container {
   width: 70%;
 }
 /* End About Section  */
+/* Our Results */
+.Our-results {
+  margin: var(--section-margin);
+}
+.Our-results .head-sec {
+  margin-bottom: 75px;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 75px;
+}
+.counter-first-row {
+  margin-bottom: 100px;
+}
+.col-1-of-4 {
+  text-align: center;
+}
+.counter {
+  height: 300px;
+  box-shadow: 0 5px 10px 10px rgb(0 0 0 / 5%);
+  padding: 50px 0;
+  border-radius: 5px;
+}
+.counter img {
+  display: block;
+  width: 100px;
+  margin: 0 auto 10px;
+}
+.counter .number {
+  font-size: 40px;
+  color: #0e1133;
+}
+.counter .number span {
+  font-weight: bold;
+}
+.counter .counter-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+}
+.counter-second-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.counter-second-row .col-3-of-4 {
+  flex: 2;
+}
+.counter-second-row .col-3-of-4 img {
+  width: 100%;
+}
+.counter-second-row .col-1-of-4 {
+  flex: 1;
+}
+.counter-second-row .col-1-of-4 img {
+  width: 100%;
+}
+.video-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.video-text .section-title {
+  margin-left: 100px;
+}
+.video-text .section-title .btn {
+  font-size: 14px;
+  color: var(--dark-blue-color);
+  border: 1px solid #ddd;
+  margin-top: 30px;
+  display: inline-block;
+}
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+}
+.arrow-left,
+.arrow-right {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-left-icon,
+.arrow-right-icon {
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+/* End Our Results */
+
+/* Download Section */
+.download-section {
+  padding: 200px 0;
+  background-color: #eef1f6;
+}
+.download-section .sm-title {
+  font-size: 18px;
+  color: var(--magenta-color);
+}
+.download-section .section-title {
+  margin: 10px 0 20px;
+}
+.download-section .section-title h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.downloads {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.downloads a {
+  text-decoration: none;
+}
+.download {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px 40px 15px 20px;
+  border-radius: 20px;
+}
+.download p {
+  font-size: 18px;
+}
+.download p span {
+  font-size: 28px;
+  font-weight: 700;
+}
+.download-ios {
+  background-color: #0e1133;
+  color: #fff;
+}
+.download-ios svg {
+  fill: #fff;
+}
+.download-android {
+  background-color: #fff;
+  color: #0e1133;
+  border: 3px solid #0e1133;
+}
+.download-android svg {
+  fill: #0e1133;
+}
+.download-icon {
+  width: 48px;
+  height: 48px;
+}
+/* Pricing Section */
+.pricing-section {
+  margin-top: 100px;
+}
+.pricing-section .head-sec {
+  text-align: center;
+}
+.pricing-section .head-sec h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.pricing-section .head-sec p {
+  font-size: 20px;
+}
